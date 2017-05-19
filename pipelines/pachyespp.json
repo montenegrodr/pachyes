@@ -1,0 +1,22 @@
+{
+  "pipeline": {
+    "name": "pachyespp"
+  },
+  "transform": {
+    "cmd": [
+      "python",
+      "app.py",
+      "--input",
+      "/pfs/pachyes"
+    ],
+    "image": "montenegrodr/pachyes:1.1"
+  },
+  "inputs": [
+    {
+      "repo": {
+        "name": "pachyes"
+      },
+      "glob": "/*"
+    }
+  ]
+}
